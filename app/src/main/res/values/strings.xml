@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Popular Movies</string>
+
+    <!-- connection failed -->
+    <string name="fetch_failed">Fetch data failed</string>
+    <string name="no_internet">Please check your internet connection.</string>
+
+    <!-- detail -->
+    <string name="average_rating">Average Rating:</string>
+    <string name="release_date">Release Date:</string>
+    <string name="title_activity_settings">Settings</string>
+
+</resources>
