@@ -16,7 +16,7 @@ constructor(private val mApiService: MovieApiService) {
             .observeOn(AndroidSchedulers.mainThread())
             .subscribe(object : SingleObserver<Movies> {
                 override fun onSuccess(movies: Movies) {
-                    listener.onMoviesListFetched(movies.getResults()!!)
+                    listener.onMoviesListFetched(movies.results)
                 }
 
                 override fun onSubscribe(d: Disposable) {

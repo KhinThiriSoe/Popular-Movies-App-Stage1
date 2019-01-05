@@ -37,19 +37,19 @@ class DetailActivity : AppCompatActivity() {
             val movieDetails = intent.getParcelableExtra<Result>("data")
 
             if (supportActionBar != null) {
-                supportActionBar?.title = movieDetails.getTitle()
+                supportActionBar?.title = movieDetails.title
                 supportActionBar?.setDisplayHomeAsUpEnabled(true)
                 supportActionBar?.setDisplayShowHomeEnabled(true)
             }
 
             GlideApp.with(this)
-                .load(ApiUrl.POSTER_PATH + movieDetails.getBackdropPath())
+                .load(ApiUrl.POSTER_PATH + movieDetails.backdropPath)
                 .placeholder(R.drawable.ic_movie)
                 .into(mPoster)
 
-            mOverview.text = movieDetails.getOverview()
-            mAverageRating.text = " " + movieDetails.getVoteAverage().toString()
-            mReleaseDate.text = " " + movieDetails.getReleaseDate()
+            mOverview.text = movieDetails.overview
+            mAverageRating.text = " " + movieDetails.voteAverage.toString()
+            mReleaseDate.text = " " + movieDetails.releaseDate
         }
     }
 

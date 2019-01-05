@@ -38,7 +38,7 @@ class MovieAdapter(private val mContext: Context, private var mListData: Mutable
 
         if (mListData != null) {
             GlideApp.with(mContext)
-                .load(ApiUrl.POSTER_PATH + mListData!![position].getPosterPath())
+                .load(ApiUrl.POSTER_PATH + mListData!![position].posterPath)
                 .placeholder(R.drawable.ic_movie)
                 .into(holder.poster)
 
