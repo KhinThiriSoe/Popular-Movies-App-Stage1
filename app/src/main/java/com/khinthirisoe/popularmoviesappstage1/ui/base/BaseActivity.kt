@@ -1,4 +1,4 @@
-package com.khinthirisoe.popularmoviesappstage1.ui
+package com.khinthirisoe.popularmoviesappstage1.ui.base
 
 import android.util.Log
 import android.widget.Toast

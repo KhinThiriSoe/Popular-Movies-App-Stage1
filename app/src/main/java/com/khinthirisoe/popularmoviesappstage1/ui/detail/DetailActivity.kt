@@ -6,7 +6,7 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.khinthirisoe.popularmoviesappstage1.GlideApp
 import com.khinthirisoe.popularmoviesappstage1.R
-import com.khinthirisoe.popularmoviesappstage1.core.service.ApiUrl
+import com.khinthirisoe.popularmoviesappstage1.core.config.ApiUrl
 import com.khinthirisoe.popularmoviesappstage1.ui.main.model.Result
 
 class DetailActivity : AppCompatActivity() {

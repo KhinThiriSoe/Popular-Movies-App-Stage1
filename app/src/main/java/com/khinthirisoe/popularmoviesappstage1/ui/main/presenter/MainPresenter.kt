@@ -1,13 +1,13 @@
 package com.khinthirisoe.popularmoviesappstage1.ui.main.presenter
 
 import com.khinthirisoe.popularmoviesappstage1.ui.main.MainContract
-import com.khinthirisoe.popularmoviesappstage1.ui.main.model.MainInteractor
+import com.khinthirisoe.popularmoviesappstage1.ui.main.model.MainRepository
 import com.khinthirisoe.popularmoviesappstage1.ui.main.model.Result
 import io.reactivex.disposables.Disposable
 import javax.inject.Inject
 
 class MainPresenter @Inject
-constructor(var interactor: MainInteractor) :
+constructor(var interactor: MainRepository) :
     MainContract.Presenter {
     var view: MainContract.View? = null
     var moviesList: ArrayList<Result>? = null

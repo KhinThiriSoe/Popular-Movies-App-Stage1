@@ -1,4 +1,4 @@
-package com.khinthirisoe.popularmoviesappstage1.core.service
+package com.khinthirisoe.popularmoviesappstage1.core.config
 
 object ApiUrl {
 

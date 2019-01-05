@@ -5,7 +5,7 @@ import com.khinthirisoe.popularmoviesappstage1.core.di.context.ApplicationContex
 import com.khinthirisoe.popularmoviesappstage1.core.di.module.ActivityModule
 import com.khinthirisoe.popularmoviesappstage1.core.di.scope.ActivityScope
 import com.khinthirisoe.popularmoviesappstage1.ui.main.MainContract
-import com.khinthirisoe.popularmoviesappstage1.ui.main.model.MainInteractor
+import com.khinthirisoe.popularmoviesappstage1.ui.main.model.MainRepository
 import com.khinthirisoe.popularmoviesappstage1.ui.main.view.MainActivity
 import dagger.Component
 
@@ -16,7 +16,7 @@ interface ActivityComponent : AppComponent {
     @ApplicationContext
     override fun getContext(): Context
 
-    fun mainInteractor(): MainInteractor
+    fun mainInteractor(): MainRepository
 
     fun mainPresenter(): MainContract.Presenter
 

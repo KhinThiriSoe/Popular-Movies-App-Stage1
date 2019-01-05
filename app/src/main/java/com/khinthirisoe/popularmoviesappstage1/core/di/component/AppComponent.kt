@@ -4,7 +4,7 @@ import android.content.Context
 import com.khinthirisoe.popularmoviesappstage1.core.App
 import com.khinthirisoe.popularmoviesappstage1.core.di.context.ApplicationContext
 import com.khinthirisoe.popularmoviesappstage1.core.di.module.ApplicationModule
-import com.khinthirisoe.popularmoviesappstage1.core.service.ApiService
+import com.khinthirisoe.popularmoviesappstage1.ui.main.model.MovieApiService
 import dagger.Component
 import javax.inject.Singleton
 
@@ -19,6 +19,6 @@ interface AppComponent {
 
     fun app(): App
 
-    fun ApiService(): ApiService
+    fun ApiService(): MovieApiService
 
 }

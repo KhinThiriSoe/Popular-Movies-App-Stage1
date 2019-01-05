@@ -1,11 +1,11 @@
-package com.khinthirisoe.popularmoviesappstage1.core.service
+package com.khinthirisoe.popularmoviesappstage1.ui.main.model
 
-import com.khinthirisoe.popularmoviesappstage1.ui.main.model.Movies
+import com.khinthirisoe.popularmoviesappstage1.core.config.ApiUrl
 import io.reactivex.Single
 import retrofit2.http.GET
 import retrofit2.http.Query
 
-interface ApiService {
+interface MovieApiService {
 
     @GET(ApiUrl.DISCOVER_MOVIES)
     fun getSortedMoviesList(

@@ -3,9 +3,9 @@ package com.khinthirisoe.popularmoviesappstage1.core.di.module
 import android.content.Context
 import com.google.gson.Gson
 import com.khinthirisoe.popularmoviesappstage1.core.App
+import com.khinthirisoe.popularmoviesappstage1.core.config.ApiUrl
 import com.khinthirisoe.popularmoviesappstage1.core.di.context.ApplicationContext
-import com.khinthirisoe.popularmoviesappstage1.core.service.ApiService
-import com.khinthirisoe.popularmoviesappstage1.core.service.ApiUrl
+import com.khinthirisoe.popularmoviesappstage1.ui.main.model.MovieApiService
 import dagger.Module
 import dagger.Provides
 import okhttp3.OkHttpClient
@@ -31,7 +31,7 @@ class ApplicationModule(private val app: App) {
 
     @Provides
     @Singleton
-    fun ApiService(): ApiService {
+    fun ApiService(): MovieApiService {
 
         val interceptor = HttpLoggingInterceptor()
         interceptor.level = HttpLoggingInterceptor.Level.BODY
@@ -54,7 +54,7 @@ class ApplicationModule(private val app: App) {
             .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
             .addConverterFactory(GsonConverterFactory.create(Gson()))
             .build()
-            .create(ApiService::class.java)
+            .create(MovieApiService::class.java)
     }
 
 }

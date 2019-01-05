@@ -1,4 +1,4 @@
-package com.khinthirisoe.popularmoviesappstage1.ui
+package com.khinthirisoe.popularmoviesappstage1.ui.settings
 
 import android.os.Bundle
 import android.preference.ListPreference
@@ -17,7 +17,9 @@ class SettingsActivity : AppCompatActivity() {
 
         if (fragmentManager.findFragmentById(android.R.id.content) == null) {
             fragmentManager.beginTransaction()
-                .add(android.R.id.content, SettingsFragment()).commit()
+                .add(android.R.id.content,
+                    SettingsFragment()
+                ).commit()
         }
     }
 
@@ -31,7 +33,9 @@ class SettingsActivity : AppCompatActivity() {
             super.onCreate(savedInstanceState)
             addPreferencesFromResource(R.xml.preferences)
 
-            bindPreferenceSummaryToValue(findPreference("sortedType"))
+            bindPreferenceSummaryToValue(
+                findPreference("sortedType")
+            )
         }
     }
 
@@ -65,7 +69,8 @@ class SettingsActivity : AppCompatActivity() {
 
         private fun bindPreferenceSummaryToValue(preference: Preference) {
             // Set the listener to watch for value changes.
-            preference.onPreferenceChangeListener = sBindPreferenceSummaryToValueListener
+            preference.onPreferenceChangeListener =
+                    sBindPreferenceSummaryToValueListener
 
             // Trigger the listener immediately with the preference's
             // current value.

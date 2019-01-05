@@ -18,10 +18,9 @@ import com.khinthirisoe.popularmoviesappstage1.R
 import com.khinthirisoe.popularmoviesappstage1.core.App
 import com.khinthirisoe.popularmoviesappstage1.core.di.component.DaggerActivityComponent
 import com.khinthirisoe.popularmoviesappstage1.core.di.module.ActivityModule
-import com.khinthirisoe.popularmoviesappstage1.ui.BaseActivity
-import com.khinthirisoe.popularmoviesappstage1.ui.SettingsActivity
+import com.khinthirisoe.popularmoviesappstage1.ui.base.BaseActivity
+import com.khinthirisoe.popularmoviesappstage1.ui.settings.SettingsActivity
 import com.khinthirisoe.popularmoviesappstage1.ui.main.MainContract
-import com.khinthirisoe.popularmoviesappstage1.ui.main.adapter.MovieAdapter
 import com.khinthirisoe.popularmoviesappstage1.ui.main.model.Result
 import com.khinthirisoe.popularmoviesappstage1.utils.PrefUtils
 import io.reactivex.android.schedulers.AndroidSchedulers
