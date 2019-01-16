@@ -10,15 +10,15 @@
             android:roundIcon="@mipmap/ic_launcher"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name=".ui.base.BaseActivity"/>
-        <activity android:name=".ui.main.view.MainActivity">
+        <activity android:name="com.khinthirisoe.popularmoviesappstage1.core.base.BaseActivity"/>
+        <activity android:name=".ui.overview.view.MovieActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".ui.detail.DetailActivity"/>
+        <activity android:name=".ui.details.DetailsActivity"/>
         <activity
                 android:name=".ui.settings.SettingsActivity"
                 android:label="@string/title_activity_settings">

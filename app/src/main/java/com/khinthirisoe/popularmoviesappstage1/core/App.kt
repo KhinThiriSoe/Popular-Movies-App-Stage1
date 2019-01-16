@@ -1,9 +1,9 @@
 package com.khinthirisoe.popularmoviesappstage1.core
 
 import android.app.Application
-import com.khinthirisoe.popularmoviesappstage1.core.di.component.AppComponent
-import com.khinthirisoe.popularmoviesappstage1.core.di.component.DaggerAppComponent
-import com.khinthirisoe.popularmoviesappstage1.core.di.module.ApplicationModule
+import com.khinthirisoe.popularmoviesappstage1.di.component.AppComponent
+import com.khinthirisoe.popularmoviesappstage1.di.component.DaggerAppComponent
+import com.khinthirisoe.popularmoviesappstage1.di.module.ApplicationModule
 
 class App : Application() {
 
